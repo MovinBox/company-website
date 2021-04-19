@@ -16,7 +16,7 @@
             el: '.swiper-pagination'
           },
           autoplay: {
-            delay: 5000,
+            delay: 4000,
             stopOnLastSlide: false,
             disableOnInteraction: true,
           },

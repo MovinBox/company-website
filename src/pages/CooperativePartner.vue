@@ -3,7 +3,7 @@
     <Title/><!-- 导航 -->
     <Banner/><!-- Banner -->
     <CooperativePartner/><!-- 合作伙伴 -->
-    <Contact/><!-- 联系 -->
+    <Contact h1Data="COOPERATIVE APPLICATION" h2Data="合作申请"/><!-- 联系 -->
     <Bottom/><!-- 底部 -->
   </div>
 </template>

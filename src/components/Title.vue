@@ -4,10 +4,10 @@
     <ul>
       <router-link 
         tag="li" 
-        :to="item.title"
         v-for="item,index in titleList"
+        :to="item.title"
         :key="index" 
-        :class="{ 'init': nowIndex === index }">
+        >
         {{item.Name}}
       </router-link>     
     </ul>
@@ -65,7 +65,7 @@ export default {
   color: #1e50ae;
   border-bottom: 2px solid #1e50ae;
 }
-.init{
+.router-link-exact-active{
   color: #1e50ae;
   border-bottom: 2px solid #1e50ae!important;
 }

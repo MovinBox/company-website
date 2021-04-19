@@ -2,7 +2,7 @@
   <div id="">
     <Title/><!-- 导航 -->
     <Banner/><!-- Banner -->
-    <Contact/><!-- 联系 -->
+    <Contact h1Data="LEAVE US A MESSAGE" h2Data="给我们留言"/><!-- 联系 -->
     <div class="contact-us">
       <div>
         <div>

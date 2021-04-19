@@ -1,8 +1,8 @@
 <template>    
     <div class="contact">
       <div>
-        <h1>COOPERATIVE APPLICATION</h1>
-        <h2>合作申请</h2>
+        <h1>{{h1Data}}</h1>
+        <h2>{{h2Data}}</h2>
         <ul>
           <li>
             <span>姓名：</span>
@@ -29,6 +29,13 @@
       </div>
     </div>
 </template>
+
+<script>
+export default ({
+  props: ['h1Data','h2Data'],//从父组件获取数据
+})
+</script>
+
 
 <style scoped>
 .contact{
