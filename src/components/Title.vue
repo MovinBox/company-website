@@ -5,7 +5,7 @@
       <router-link 
         tag="li" 
         v-for="item,index in titleList"
-        :to="item.title"
+        :to="item.linkTo"
         :key="index" 
         >
         {{item.Name}}
@@ -19,12 +19,12 @@ export default {
   data() {
     return{
       titleList: [
-        {Name: '首页',title: '/'},
-        {Name: '关于我们',title: '/AboutUs'},
-        {Name: '公司业务',title: '/CorporateBusiness'},
-        {Name: '新闻资讯',title: '/News'},
-        {Name: '合作伙伴',title: '/CooperativePartner'},
-        {Name: '联系我们',title: '/ContactUs'},
+        {Name: '首页',linkTo: '/'},
+        {Name: '关于我们',linkTo: '/AboutUs'},
+        {Name: '公司业务',linkTo: '/CorporateBusiness'},
+        {Name: '新闻资讯',linkTo: '/News'},
+        {Name: '合作伙伴',linkTo: '/CooperativePartner'},
+        {Name: '联系我们',linkTo: '/ContactUs'},
       ],
       list: [],
       nowIndex: 0,
