@@ -8,18 +8,18 @@
         <p class="phover">123</p>
       </div>
       <ul>
-        <li v-for="item in list">
+        <router-link tag="li" v-for="item,index in list" :to="item.linkTo" :key="index">
           <h5>
             {{ item.title }}
             <span>{{ item.updateTime }}</span>
           </h5>
           <p>{{ item.content }}</p>
-        </li>
+        </router-link>
       </ul>
     </div>
     <div class="newsList">
       <ul>
-        <li v-for="item in list">
+        <!-- <li v-for="item in list">
           <div>
             <h4>{{ item.updateTime.split('-')[2] }}</h4>
             <p>{{ item.updateTime.split('-')[0] }}/{{ item.updateTime.split('-')[1] }}</p>
@@ -28,7 +28,17 @@
             <h5>{{ item.title }}</h5>
             <p>{{ item.content }}</p>
           </div>
-        </li>
+        </li> -->
+        <router-link tag="li" v-for="item,index in list" :to="item.linkTo" :key="index">
+          <div>
+            <h4>{{ item.updateTime.split('-')[2] }}</h4>
+            <p>{{ item.updateTime.split('-')[0] }}/{{ item.updateTime.split('-')[1] }}</p>
+          </div>
+          <div>
+            <h5>{{ item.title }}</h5>
+            <p>{{ item.content }}</p>
+          </div>
+        </router-link>
       </ul>
     </div>
     <Bottom/><!-- 底部 -->
@@ -36,9 +46,9 @@
 </template>
 
 <script>
-import Title from '../components/Title'
-import Banner from '../components/Banner'
-import Bottom from '../components/Bottom'
+import Title from '@/components/Title'
+import Banner from '@/components/Banner'
+import Bottom from '@/components/Bottom'
 
 export default {
   name: 'AboutUs',
@@ -48,17 +58,20 @@ export default {
         {
           title: '开板是什么意思？专业知识这样来理解',
           updateTime: '2019-12-11',
-          content: '对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...'
+          content: '对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...',
+          linkTo: './DetailsPage'
         },
         {
           title: '开板是什么意思？专业知识这样来理解',
           updateTime: '2019-12-11',
-          content: '对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停'
+          content: '对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停',
+          linkTo: './DetailsPage'
         },
         {
           title: '开板是什么意思？专业知识这样来理解',
           updateTime: '2019-12-11',
-          content: '对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...'
+          content: '对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...对于开板的意思,一些资料显示是对市场进行一种开发，对于股票来是一般的情况下连续涨停板的打开，假如说有一段时间它涨停...',
+          linkTo: './DetailsPage'
         },
       ],
     }
