@@ -44,10 +44,10 @@
   height: 800px;
 }
 .swiper-pagination-bullet{
-  width: 50px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 0;
+  width: 50px!important;
+  height: 3px!important;
+  background-color: #fff!important;
+  border-radius: 0!important;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
   height: 5px;
