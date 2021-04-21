@@ -1,10 +1,11 @@
 // 引入页面
-import Index from './pages/Index'
-import AboutUs from './pages/AboutUs'
-import CorporateBusiness from './pages/CorporateBusiness'
-import News from './pages/News'
-import CooperativePartner from './pages/CooperativePartner'
-import ContactUs from './pages/ContactUs'
+import Index from '@/pages/Index'
+import AboutUs from '@/pages/AboutUs'
+import CorporateBusiness from '@/pages/CorporateBusiness'
+import News from '@/pages/News'
+import CooperativePartner from '@/pages/CooperativePartner'
+import ContactUs from '@/pages/ContactUs'
+import DetailsPage from '@/pages/DetailsPage'
 
 export default [
     {
@@ -48,5 +49,12 @@ export default [
         title: "联系我们",
       },
       component: ContactUs,
+    },
+    {
+      path: "/DetailsPage",
+      meta:{
+        title: "详情页",
+      },
+      component: DetailsPage,
     },
   ]
