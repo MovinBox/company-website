@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Title/><!-- 导航 -->
         <Banner/><!-- Banner -->
         <div class="details-page">
             <h1>{{title}}</h1>
@@ -11,21 +10,16 @@
                 <router-link tag="span" to="./News">{{title}}</router-link>                
             </div>
         </div>
-        <Bottom/><!-- 底部 -->        
     </div>
 </template>
 
 <script>
-import Title from '@/components/Title'
 import Banner from '@/components/Banner'
-import Bottom from '@/components/Bottom'
 
 export default {
   name: 'AboutUs',
   components: {
-    Title,
     Banner,
-    Bottom,
   },
   data(){
       return{

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Title/><!-- 导航 -->
     <Banner/><!-- Banner -->
     <ComponyProfile/><!-- 公司简介 -->
     <div class="development">
@@ -32,23 +31,18 @@
         </div>
       </div>
     </div>
-    <Bottom/><!-- 底部 -->
   </div>
 </template>
 
 <script>
-import Title from '../components/Title'
 import Banner from '../components/Banner'
 import ComponyProfile from '../components/ComponyProfile'
-import Bottom from '../components/Bottom'
 
 export default {
   name: 'AboutUs',
   components: {
-    Title,
     Banner,
     ComponyProfile,
-    Bottom,
   },
   data() {
     return{

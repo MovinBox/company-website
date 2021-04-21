@@ -91,7 +91,7 @@ export default ({
 .contact > div > ul > li > input{
   width: 277px;
   height: 100%;
-  border: #686868;
+  border: 1px solid #dadada;
   border-radius: 3px;
   padding-left: 8px;
   float: left;
@@ -104,7 +104,7 @@ export default ({
 .contact > div > ul > li:nth-last-of-type(1) > textarea{
   float: left;
   padding-left: 8px;
-  border: #686868;
+  border: 1px solid #dadada;
   border-radius: 3px;
   width: 1077px;
   height: 100%;

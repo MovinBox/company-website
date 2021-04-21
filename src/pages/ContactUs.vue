@@ -1,6 +1,5 @@
 <template>
   <div id="">
-    <Title/><!-- 导航 -->
     <Banner/><!-- Banner -->
     <Contact h1Data="LEAVE US A MESSAGE" h2Data="给我们留言"/><!-- 联系 -->
     <div class="contact-us">
@@ -18,25 +17,20 @@
         <div><BaiduMap/></div>
       </div>
     </div>
-    <Bottom/><!-- 底部 -->
   </div>
 </template>
 
 <script>
-import Title from '../components/Title'
 import Banner from '../components/Banner'
 import Contact from '../components/Contact'
 import BaiduMap from '../components/BaiduMap'
-import Bottom from '../components/Bottom'
 
 export default {
   name: 'AboutUs',
   components: {
-    Title,
     Banner,
     Contact,
     BaiduMap,
-    Bottom,
   }
 }
 </script>
@@ -81,5 +75,9 @@ export default {
   margin-top: 85px;
   margin-right: 50px;
   float: right;
+}
+
+.contact::after {
+  background-image: none;
 }
 </style>

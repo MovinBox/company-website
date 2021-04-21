@@ -1,6 +1,5 @@
 <template>
   <div id="">
-    <Title/><!-- 导航 -->
     <Banner/><!-- Banner -->
     <div class="corporate-business">
       <ul>
@@ -15,14 +14,11 @@
         </li>
       </ul>
     </div>
-    <Bottom/><!-- 底部 -->
   </div>
 </template>
 
 <script>
-import Title from '../components/Title'
 import Banner from '../components/Banner'
-import Bottom from '../components/Bottom'
 
 export default {
   name: 'AboutUs',
@@ -51,9 +47,7 @@ export default {
     }
   },
   components: {
-    Title,
     Banner,
-    Bottom,
   }
 }
 </script>
